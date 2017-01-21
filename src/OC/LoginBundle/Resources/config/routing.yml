@@ -1,3 +1,8 @@
 oc_login_homepage:
     path:     /
     defaults: { _controller: OCLoginBundle:Default:index }
+
+oc_login_add:
+    path:      /add
+    defaults:
+        _controller: OCLoginBundle:Advert:add
