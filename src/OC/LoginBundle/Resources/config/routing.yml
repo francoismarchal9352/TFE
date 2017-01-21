@@ -1,0 +1,3 @@
+oc_login_homepage:
+    path:     /
+    defaults: { _controller: OCLoginBundle:Default:index }
