@@ -1,3 +1,17 @@
-h3 {
-    background-color: black;
+html {
+    background-color: #F5F5F5;
+}
+
+.login {
+    border-style: solid;
+    width : 370px;
+    padding  : 20px;
+    margin: auto;
+    margin-top: 30vh;
+    
+}
+
+label {
+    display: inline-block;
+    width : 150px;
 }

@@ -24,7 +24,7 @@ class AdvertController extends Controller
         $formBuilder
             ->add('Pseudo',    TextType::class)
             ->add('Password',     TextType::class)
-            ->add('save',      SubmitType::class)
+            ->add('Connection',      SubmitType::class)
         ;
         // Pour l'instant, pas de candidatures, catégories, etc., on les gérera plus tard
 
