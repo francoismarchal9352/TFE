@@ -2,13 +2,17 @@ html {
     background-color: #F5F5F5;
 }
 
-.login {
-    border-style: solid;
+#blocLog {
     width : 370px;
-    padding  : 20px;
+
     margin: auto;
-    margin-top: 30vh;
-    
+    margin-top: 10vh;
+}
+
+.login {
+    padding  : 20px;
+    border-style: solid;
+    box-shadow: 8px 8px 0px #aaa;
 }
 
 label {
