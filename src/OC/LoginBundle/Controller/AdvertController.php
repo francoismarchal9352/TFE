@@ -16,8 +16,10 @@ class AdvertController extends Controller
 {
     public function addAction(Request $request)
     {
+
         // On crée un objet Advert
         $advert = new Advert();
+
 
         // On crée le FormBuilder grâce au service form factory
         $formBuilder = $this->get('form.factory')->createBuilder(FormType::class);
@@ -36,8 +38,14 @@ class AdvertController extends Controller
         // afin qu'elle puisse afficher le formulaire toute seule
 
         if ($request->getMethod() == 'POST') {
+                $post = $_POST['form'];
 
-                if ($_POST['form']['Pseudo']==$_POST['form']['Password']){
+                $repository = $this->getDoctrine()->getRepository('OCLoginBundle:Advert');
+                $product = $repository->findOneByPseudo($post['Pseudo']);
+                $test = $product->getPassword();
+
+
+                if ($post['Password']==$test){
                     return $this->render('OCLoginBundle:Default:index.html.twig');
                 }
                 else {
